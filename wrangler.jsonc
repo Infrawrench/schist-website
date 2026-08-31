@@ -1,0 +1,17 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "schist-website",
+    "compatibility_date": "2026-08-31",
+    "routes": [
+        {
+            "pattern": "schist.app",
+            "custom_domain": true
+        }
+    ],
+    "assets": {
+        "directory": "./public"
+    },
+    "observability": {
+        "enabled": true
+    }
+}
