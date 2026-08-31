@@ -12,6 +12,10 @@ const headerStyles = cssMinify`
         background-color: #eef1f6;
     }
 
+    .try-link {
+        color: inherit;
+    }
+
     header::after {
         content: '';
         position: absolute;
@@ -69,7 +73,10 @@ export default function Header() {
             <header>
                 <Logo />
                 <h1>Schist</h1>
-                <h2>The open source image editor that feels good to use.</h2>
+                <h2>
+                    The open source image editor that feels good to use.{" "}
+                    <a href="https://try.schist.app" className="try-link">Try it in your browser!</a>
+                </h2>
                 <DownloadButton />
             </header>
         </>
