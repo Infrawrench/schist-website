@@ -5,7 +5,10 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 const rootStyles = cssMinify`
-    @import url('./Roboto.ttf');    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('./Roboto.ttf') format('truetype');
+    }
 
     * {
         font-family: 'Roboto', sans-serif;
