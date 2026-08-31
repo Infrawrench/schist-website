@@ -5,4 +5,4 @@ import { writeFileSync } from "fs";
 
 const html = renderToString(createElement(HTMLDocument));
 
-writeFileSync("public/index.html", html);
+writeFileSync("public/index.html", "<!DOCTYPE html>\n" + html);
