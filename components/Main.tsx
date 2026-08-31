@@ -113,6 +113,11 @@ const features = [
         desc: "134 filters from Photoshop's Filter menu, Filter Gallery and Neural Filters included, with the dialogs you already know. Every one previews live on the canvas, and the heavy sweeps run on your GPU!",
         image: "./features/filters.png",
     },
+    {
+        title: "Let your agents do the work!",
+        desc: "If you have Codex or Claude Code installed with an active subscription, your agents can work alongside you editing the canvas as you watch!",
+        image: "./features/agents.png",
+    }
 ];
 
 export default function Main() {
