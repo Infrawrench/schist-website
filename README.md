@@ -47,6 +47,7 @@ components/
   DownloadButton.tsx  Platform detection + latest-release lookup (inline JS)
   LinuxDownloadModal.tsx  Per-distro download options
   Main.tsx            Feature sections
+  Backers.tsx         Live backer logos by tier and one-time backing link
   Footer.tsx          Attribution
   Icon.tsx            Logo and favicon, inlined as data URIs
 utils/minifiers.ts    cssMinify / jsMinify / svgDataURI template tags
@@ -64,6 +65,16 @@ const styles = cssMinify`
 
 `svgDataURI` does the same for SVG, encoding it as a `data:` URI so icons need no
 extra requests.
+
+## Backers feed
+
+The Backers section fetches `https://backers.schist.app/api/backers` in the
+browser. Active backers appear under their tier, ordered by tier price, with
+logos selected using the visitor's light/dark color preference (Bronze lists
+names only). Names and
+website links remain visible if a logo fails to load. The backing links work
+without JavaScript and remain visible when the feed is empty or unavailable.
+No API key, build-time fetch, or redeploy is needed when backers change.
 
 ## License
 
