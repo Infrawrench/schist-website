@@ -70,7 +70,8 @@ extra requests.
 
 The Backers section fetches `https://backers.schist.app/api/backers` in the
 browser. Active backers appear under their tier, ordered by tier price, with
-logos selected using the visitor's light/dark color preference. Names and
+logos selected using the visitor's light/dark color preference (Bronze lists
+names only). Names and
 website links remain visible if a logo fails to load. The backing links work
 without JavaScript and remain visible when the feed is empty or unavailable.
 No API key, build-time fetch, or redeploy is needed when backers change.

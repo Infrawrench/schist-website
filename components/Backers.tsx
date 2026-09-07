@@ -71,7 +71,7 @@ const script = jsMinify`(async function () {
                 link.rel = "sponsored noopener noreferrer";
                 const light = httpsUrl(backer.logoLight);
                 const dark = httpsUrl(backer.logoDark);
-                if (light || dark) {
+                if (tier.id !== "bronze" && (light || dark)) {
                     const picture = document.createElement("picture");
                     if (dark) {
                         const source = document.createElement("source");
