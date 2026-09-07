@@ -1,4 +1,5 @@
 import { cssMinify } from "../utils/minifiers";
+import Backers from "./Backers";
 
 const mainStyles = cssMinify`
     main {
@@ -142,6 +143,7 @@ export default function Main() {
                         </section>
                     ))}
                 </div>
+                <Backers />
             </main>
         </>
     );

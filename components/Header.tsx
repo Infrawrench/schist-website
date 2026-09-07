@@ -78,6 +78,7 @@ export default function Header() {
                     <a href="https://try.schist.app" className="try-link">Try it in your browser!</a>
                 </h2>
                 <DownloadButton />
+                <p><a href="https://backers.schist.app" className="try-link">Back Schist</a></p>
             </header>
         </>
     );
