@@ -1,0 +1,4 @@
+{
+    "authentication_url": "https://cloud.schist.app/connect",
+    "code_exchange_url": "https://cloud.schist.app/api/auth/exchange"
+}

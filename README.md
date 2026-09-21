@@ -76,6 +76,14 @@ website links remain visible if a logo fails to load. The backing links work
 without JavaScript and remain visible when the feed is empty or unavailable.
 No API key, build-time fetch, or redeploy is needed when backers change.
 
+## Schist Cloud discovery
+
+`public/.schist/auth-urls.json` serves the Cloud authentication and code-exchange
+URLs at `https://schist.app/.schist/auth-urls.json`, so the desktop app can use
+`schist.app` as its provider domain. It returns JSON directly because the desktop
+client does not follow discovery redirects. Keep these URLs aligned with
+`https://cloud.schist.app/.schist/auth-urls.json`.
+
 ## License
 
 MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Infrawrench LLC.
